@@ -11,6 +11,6 @@ public interface StudentsRepository extends JpaRepository<Students, Long> {
     List<Students> findAll();
 
     @Query(value = "SELECT S FROM Students S")
-    List<Students> findAllStudents(Sort sort);
+    List<Students> findAllStudents();
 
 }
